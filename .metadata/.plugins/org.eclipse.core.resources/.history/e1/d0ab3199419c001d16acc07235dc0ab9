@@ -1,0 +1,9 @@
+package br.ufjf.dcc.poo.exercicios;
+
+public class Palpite {
+
+	public static void main(String[] args) {
+		int valor = Math.random() * 100;
+	}
+
+}

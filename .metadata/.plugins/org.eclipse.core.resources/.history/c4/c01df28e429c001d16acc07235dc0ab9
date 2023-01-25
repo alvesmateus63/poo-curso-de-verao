@@ -1,0 +1,25 @@
+package br.ufjf.dcc.poo.exercicios;
+
+import javax.swing.JOptionPane;
+
+public class Palpite {
+
+	public static void main(String[] args) {
+		double valor = Math.random() * 10;
+		
+		int palpite = Integer.parseInt(JOptionPane.showInputDialog("Chute um valor", null));
+		
+		if(palpite < 0 || palpite > 100) {
+			JOptionPane.showMessageDialog(null, "Valor fora do limite");
+		} else if (palpite > valor) {
+			JOptionPane.showMessageDialog(null, "Chute um valor menor " + "o valor era: " + valor);
+		} else if(palpite < valor) {
+			JOptionPane.showMessageDialog(null, "Chute um valor maior " + "o valor era: " + valor);
+		} else{
+			JOptionPane.showMessageDialog(null, "Valor encontrado");
+		}
+		
+		
+	}
+
+}

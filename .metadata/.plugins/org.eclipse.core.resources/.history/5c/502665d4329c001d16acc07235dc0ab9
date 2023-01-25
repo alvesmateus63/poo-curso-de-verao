@@ -1,0 +1,17 @@
+package br.ufjf.dcc.poo.exemplos;
+
+import javax.swing.JOptionPane;
+
+public class CalculaSomaDialogo {
+
+	public static void main(String[] args) {
+		String num1, num2;
+		
+		num1 = JOptionPane.showInputDialog("Valor 1", num1);
+		num2 = JOptionPane.showInputDialog("Valor 2", num2);
+		
+		JOptionPane.showMessageDialog(null, (float)num1+ (float)num2);
+
+	}
+
+}
