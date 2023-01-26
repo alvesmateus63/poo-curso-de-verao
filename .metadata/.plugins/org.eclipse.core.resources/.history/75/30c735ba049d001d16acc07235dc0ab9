@@ -1,0 +1,10 @@
+package br.ufjf.dcc.poo.exercicios;
+
+public class SequenciaInteiros {
+
+	public static void main(String[] args) {
+		Scanner t = new Scanner();
+
+	}
+
+}
