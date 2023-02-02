@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class ItemPedido {
 	private int quantidade;
 	private double preco;
-	private ArrayList<Produto> produtos;
+	private Pedido pedido;
+	private Produto produto;
 	
 	/// Getters
 	
@@ -17,9 +18,14 @@ public class ItemPedido {
 		return preco;
 	}
 	
-	public ArrayList<Produto> getProdutos() {
-		return produtos;
+	public Pedido getPedido() {
+		return pedido;
 	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+	
 	
 	/// Setters
 	
@@ -31,14 +37,23 @@ public class ItemPedido {
 		this.preco = preco;
 	}
 	
-	public void setProdutos(ArrayList<Produto> produtos) {
-		this.produtos = produtos;
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
 	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
 	
 	/// Methods
 	
 	public int incluirItem() {return 0;}
 	public int excluirItem() {return 0;}
+
+	
+
+	
 
 	
 }

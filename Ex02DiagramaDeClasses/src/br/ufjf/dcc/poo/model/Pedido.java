@@ -8,6 +8,8 @@ public class Pedido {
 	private String vendedor;
 	private String status;
 	private String observacoes;
+	private Cliente cliente;
+	
 	private ArrayList<ItemPedido> itensPedidos;
 	
 	/// Getters
@@ -26,6 +28,10 @@ public class Pedido {
 	
 	public String getObservacoes() {
 		return observacoes;
+	}
+	
+	public Cliente getCliente() {
+		return cliente;
 	}
 	
 	public ArrayList<ItemPedido> getItensPedidos() {
@@ -48,6 +54,14 @@ public class Pedido {
 	
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
+	}
+	
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	public void setItensPedidos(ArrayList<ItemPedido> itensPedidos) {
+		this.itensPedidos = itensPedidos;
 	}
 	
 	/// Methods
