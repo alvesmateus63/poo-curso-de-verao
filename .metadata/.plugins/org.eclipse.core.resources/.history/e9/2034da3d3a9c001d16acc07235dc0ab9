@@ -1,9 +1,0 @@
-package br.ufjf.dcc.poo.exercicios;
-
-public class ConsumoCombustivel {
-
-	public static void main(String[] args) {
-		int kmDirigidos, tanqueCheio;
-	}
-
-}
